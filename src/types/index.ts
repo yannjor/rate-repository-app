@@ -1,3 +1,5 @@
+import { TextProps } from 'react-native/types';
+
 export interface Repository {
   id: string;
   fullName: string;
@@ -8,4 +10,10 @@ export interface Repository {
   ratingAverage: number;
   reviewCount: number;
   ownerAvatarUrl: string;
+}
+
+export interface CustomTextProps extends TextProps {
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
 }
