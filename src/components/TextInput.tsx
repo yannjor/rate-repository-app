@@ -4,7 +4,6 @@ import { TextInputProps } from '../types';
 const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
-    marginBottom: 10,
     padding: 10,
     borderRadius: 5,
   },
