@@ -1,4 +1,7 @@
-import { TextProps } from 'react-native/types';
+import {
+  TextProps,
+  TextInputProps as NativeTextInputProps,
+} from 'react-native/types';
 
 export interface Repository {
   id: string;
@@ -16,4 +19,8 @@ export interface CustomTextProps extends TextProps {
   color?: string;
   fontSize?: string;
   fontWeight?: string;
+}
+
+export interface TextInputProps extends NativeTextInputProps {
+  error?: string | false | undefined;
 }
